@@ -20,7 +20,7 @@ public class HeroProfile {
     public void takeDamage(int amount) {
         health -= amount;
         if (health < 0) {
-            health = 0; // Enforce minimum 0 health
+            health = 0;
         }
     }
 
