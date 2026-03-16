@@ -15,6 +15,10 @@ public class DungeonFacade {
         this.rewardService = new RewardService();
     }
 
+    public DungeonFacade setRandomSeed(long seed) {
+        return this;
+    }
+
     public AdventureResult runAdventure(HeroProfile hero, BossEnemy boss, AttackAction action) {
         AdventureResult result = new AdventureResult();
 
