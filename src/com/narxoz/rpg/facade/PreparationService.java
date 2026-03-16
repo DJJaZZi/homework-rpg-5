@@ -9,9 +9,9 @@ public class PreparationService {
         if (hero == null || !hero.isAlive() || boss == null || !boss.isAlive() || action == null) {
             return false;
         }
-        result.addLog(hero.getName() + " enters the dungeon to face " + boss.getTitle() + "!");
-        result.addLog("Equipped attack: " + action.getActionName());
-        result.addLog("Attack Effects: " + action.getEffectSummary());
+        result.addLine(hero.getName() + " enters the dungeon to face " + boss.getName() + "!");
+        result.addLine("Equipped attack: " + action.getActionName());
+        result.addLine("Attack Effects: " + action.getEffectSummary());
         return true;
     }
 }

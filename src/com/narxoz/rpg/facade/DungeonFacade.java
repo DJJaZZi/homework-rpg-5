@@ -20,7 +20,7 @@ public class DungeonFacade {
 
         boolean ready = prepService.prepare(hero, boss, action, result);
         if (!ready) {
-            result.addLog("Preparation failed. Adventure aborted.");
+            result.addLine("Preparation failed. Adventure aborted.");
             return result;
         }
 
