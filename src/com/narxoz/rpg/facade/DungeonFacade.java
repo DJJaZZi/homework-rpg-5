@@ -27,9 +27,7 @@ public class DungeonFacade {
             result.addLine("Preparation failed. Adventure aborted.");
             return result;
         }
-
         battleService.battle(hero, boss, action, result);
-
         rewardService.determineReward(hero, boss, result);
 
         return result;
