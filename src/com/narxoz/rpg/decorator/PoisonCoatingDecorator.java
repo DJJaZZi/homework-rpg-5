@@ -17,7 +17,6 @@ public class PoisonCoatingDecorator extends ActionDecorator {
 
     @Override
     public String getEffectSummary() {
-        // TODO: Append or compose the poison effect description.
         return super.getEffectSummary() + ", applies deadly toxins";
     }
 }
